@@ -16,7 +16,7 @@ app.use(cors({
 app.use(express.json())
 
 app.use("/studentsinfo",studentRouter)
-app.listen(process.env.PORT || 3000 ,async()=>{
+app.listen(process.env.PORT || 8000 ,async()=>{
     try {
         await connection
         console.log(`server is running port on ${process.env.PORT || 3000}`)
