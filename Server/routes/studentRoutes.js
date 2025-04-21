@@ -11,3 +11,6 @@ studentRouter.get("/getsinglestudentinfo/:_id",GetSingleStudentInfo)
 studentRouter.patch("/update/:_id",updateStudentInfo)
 
 module.exports=studentRouter
+
+
+// https://mp-demobackend-production.up.railway.app/studentsinfo/getalldata
