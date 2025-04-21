@@ -16,10 +16,12 @@ app.use(cors({
 app.use(express.json())
 
 app.use("/studentsinfo",studentRouter)
-app.listen(process.env.PORT || 8000 ,async()=>{
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT || 8000 ,async()=>{
     try {
         await connection
-        console.log(`server is running port on ${process.env.PORT || 3000}`)
+        console.log(`server is running port on ${PORT || 8000}`)
     } catch (error) {
         console.log(error)
     }
