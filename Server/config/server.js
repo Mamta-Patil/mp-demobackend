@@ -1,4 +1,4 @@
 // const mongoose=require("mogoose");
 const mongoose=require("mongoose")
-const connection=mongoose.connect("mongodb://127.0.0.1:27017/STUDENT_INFORMATION")
+const connection=mongoose.connect(process.env.MONGODBURL)
 module.exports=connection
