@@ -1,7 +1,7 @@
 const express= require("express")
 const { createStudentInfo, getStudentsInfo, delateStudentData, updateStudentInfo, GetSingleStudentInfo } = require("../controllers/studentsController")
 const app=express()
-app.use(express())
+// app.use(express())
 const studentRouter=express.Router()
 
 studentRouter.post("/create",createStudentInfo)

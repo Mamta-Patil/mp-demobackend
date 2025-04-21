@@ -15,6 +15,11 @@ app.use(cors({
 
 app.use(express.json())
 
+// Add root route
+app.get("/", (req, res) => {
+    res.status(200).json({ message: "Welcome to the Student Information API" });
+  });
+
 app.use("/studentsinfo",studentRouter)
 const PORT = process.env.PORT || 8080;
 
