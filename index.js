@@ -19,7 +19,7 @@ app.use(express.json())
 
 // app.use(express.json())
 
-app.use("/studentsinfo",studentRouter)
+app.use("/api",studentRouter)
 // PORT=8080;
 // app.listen(PORT || 3000 ,async()=>{
 //     try {
