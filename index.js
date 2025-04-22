@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
     res.status(200).json({ message: "Welcome to the Student Information API" });
 });
 
-app.use("/studentsinfo", studentRouter)
+app.use("/api", studentRouter)
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT || 8000, async () => {

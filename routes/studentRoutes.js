@@ -5,7 +5,7 @@ const app=express()
 const studentRouter=express.Router()
 
 studentRouter.post("/create",createStudentInfo)
-studentRouter.get("/getalldata",getStudentsInfo)
+studentRouter.get("/get",getStudentsInfo)
 studentRouter.delete("/delete/:_id",delateStudentData)
 studentRouter.get("/getsinglestudentinfo/:_id",GetSingleStudentInfo)
 studentRouter.patch("/update/:_id",updateStudentInfo)
