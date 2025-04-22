@@ -6,5 +6,5 @@ const studentSchema =new mongoose.Schema({
     Standerd:Number
 }) 
 
-const studentModel=mongoose.model("info",studentSchema)
+const studentModel=mongoose.model("studentinformation",studentSchema)
 module.exports=studentModel

@@ -45,6 +45,7 @@ const GetSingleStudentInfo = async (req, res) => {
     } catch (error) {
         res.status(400).json({ message: error })
     }
+
 }
 
 // delate    
